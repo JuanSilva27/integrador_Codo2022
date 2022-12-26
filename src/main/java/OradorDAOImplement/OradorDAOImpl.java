@@ -102,7 +102,7 @@ public class OradorDAOImpl implements IOradorDAO {
 		// TODO Auto-generated method stub
 		Connection connection = AdministradorDeConexiones.getConnection();
 		
-		String sql = "update articulo set nombre=?,apellido=?,tema=? where id=?";
+		String sql = "update oradores set nombre=?,apellido=?,tema=? where id=?";
 		
 		PreparedStatement statement = connection.prepareStatement(sql);
 		

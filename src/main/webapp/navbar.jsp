@@ -1,6 +1,6 @@
     <nav class="navbar navbar-light miNav">
         <div class="container-fluid row justify-content-center">
-            <a class="navbar-brand col-3 text-white" href="index.html">
+            <a class="navbar-brand col-3 text-white" href="index.jsp">
                 <img src="./img/codoacodo.png" alt="" width="100">
                 Conf Bs As
             </a>

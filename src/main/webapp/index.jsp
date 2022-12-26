@@ -124,6 +124,11 @@
 	                        <p class="col-8 formP">Recuerda incluir un título para tu charla</p>
 	                        <button href="" class="btn btn-primary col-8 btnEnviar" type="submit">Enviar</button>
 	                    </div>
+	                    <div>
+	                        	<a  aria-current="page" href="<%=request.getContextPath()%>/FindAllOradoresController">>
+	                        		Ver a los demas oradores Inscriptos
+	                        	</a>
+	                    </div>
 	                </div>
 	            </form>
             </div>
