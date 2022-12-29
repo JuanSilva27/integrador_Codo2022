@@ -7,8 +7,11 @@
     <jsp:include page="navbar.jsp"/>
 
     <main>
-
-        <div class="row justify-content-center mt-5 mb-2 gx-0">
+		
+        <div class="row justify-content-center mt-4 mb-1 gx-0">
+        	<div class="col-8 mt-4 d-flex justify-content-center mb-3">
+	        		<a class="btn btn-primary" href="<%=request.getContextPath()%>/FindAllTicketsController">Consulta tu Ticket </a>
+	    	</div>
             <div class="row col-10 justify-content-center">
                 <div class="col-3 ps-1 pe-1">
                     <div class="card border-primary" style="width:100%;">
@@ -94,7 +97,7 @@
 	                </div>
 	            </div>
             </form>
-
+			
         </section>
 
     </main>
