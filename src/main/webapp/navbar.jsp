@@ -19,7 +19,7 @@
                         <a class="navLinks" href="./index.jsp#Conviertete">Convertite en orador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="navLinks tickets"href="../pages/tickets.html">Comprar tickets</a>
+                        <a class="navLinks tickets"href="./tickets.jsp">Comprar tickets</a>
                     </li>
                 </ul>
             </div>

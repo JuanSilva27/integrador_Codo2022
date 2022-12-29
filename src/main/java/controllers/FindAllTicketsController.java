@@ -10,27 +10,26 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import OradorDAOImplement.OradorDAOImpl;
-import dao.IOradorDAO;
-import domain.Orador;
+import TicketDAOImplement.TicketDAOImpl;
+import dao.ITicketDAO;
+import domain.Ticket;
 
-@WebServlet("/FindAllOradoresController")
-public class FindAllOradoresController extends HttpServlet {
+@WebServlet("/FindAllTicketsController")
+public class FindAllTicketsController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		IOradorDAO dao = new OradorDAOImpl();
+		ITicketDAO dao = new TicketDAOImpl();
 		
-		List<Orador> oradores = new ArrayList<>();
+		List<Ticket> tickets = new ArrayList<>();
 		
 		try {
-			oradores = dao.findAll();
-			System.out.println(oradores);
+			tickets = dao.findAll();
 		}catch(Exception e){
 			e.printStackTrace();
 		}
 		
-		req.setAttribute("oradores", oradores);
-		getServletContext().getRequestDispatcher("/oradores.jsp").forward(req, res);
+		req.setAttribute("tickets", tickets);
+		getServletContext().getRequestDispatcher("/allTickets.jsp").forward(req, res);
 	}
 	
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {	

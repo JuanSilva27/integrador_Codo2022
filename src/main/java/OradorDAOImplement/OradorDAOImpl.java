@@ -122,7 +122,7 @@ public class OradorDAOImpl implements IOradorDAO {
 		
 		Statement statement = connection.createStatement();
 		
-		String sql = "select * from oradores where titulo like '%"+clave+"%'";
+		String sql = "select * from oradores where nombre like '%"+clave+"%'";
 		ResultSet resultSet = statement.executeQuery(sql);
 		
 		List<Orador> oradores = new ArrayList<>();
