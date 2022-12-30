@@ -104,25 +104,25 @@
                 <p>Anótate como orador para dar una <a href="" class="formA">charla ignite.</a>Cuéntanos de qué queres hablar!</p>
             </div>
             <div>
-	            <form action="<%=request.getContextPath()%>/CreateOradoresController" method="POST">
+	            <form id="oradoresForm" action="<%=request.getContextPath()%>/CreateOradoresController" method="POST">
 	                <div class="container-fluid row justify-content-center">
 	                    <div class="col-9 d-flex flex-wrap justify-content-center">
 	                        <div class="col-8 d-flex justify-content-between">
 	                            <div class="formNombre">
 	                            	<label hidden for="First name" class="form-label">Last name</label>
-	                                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" name="nombre">
+	                                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" name="nombre" id="nombre">
 	                            </div>
 	                            <div class="formApellido">
 	                             	<label hidden for="Last name" class="form-label">Last name</label>
-	                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" name="apellido">
+	                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" name="apellido" id="apellido">
 	                            </div>
 	                        </div>
 	                        <div class="col-8 mt-4">
 	                            <label hidden for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-	                            <textarea class="form-control" id="exampleFormControlTextarea1 miTextArea" rows="4" placeholder="Sobre qué quieres hablar?" name="tema"></textarea>
+	                            <textarea class="form-control" id="miTextArea" rows="4" placeholder="Sobre qué quieres hablar?" name="tema"></textarea>
 	                        </div>
 	                        <p class="col-8 formP">Recuerda incluir un título para tu charla</p>
-	                        <button href="" class="btn btn-primary col-8 btnEnviar" type="submit">Enviar</button>
+	                        <button href="" class="btn btn-primary col-8 btnEnviar" id="btnEnviar"type="submit">Enviar</button>
 	                    </div>
 	                    <div>
 	                        	<a  aria-current="page" href="<%=request.getContextPath()%>/FindAllOradoresController">>
@@ -136,6 +136,7 @@
     </main>
 
 <jsp:include page="footer.jsp"/>
+<script src="./js/validate.js"></script>
 </body>
 
 </html>

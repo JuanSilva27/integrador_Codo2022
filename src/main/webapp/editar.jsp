@@ -25,7 +25,7 @@
 					    	name="nombre" 
 					    	type="text" 
 					    	class="form-control" 
-					    	id="validationCustom01" 
+					    	id="nombre" 
 					    	value="<%=orador.getNombre()%>" 
 					    	required>
 					    <div class="valid-feedback">
@@ -40,7 +40,7 @@
 					    	name="apellido"
 					    	type="text" 
 					    	class="form-control" 
-					    	id="validationCustom02" 
+					    	id="apellido" 
 					    	value="<%=orador.getApellido()%>"
 					    	required>
 					    <div class="valid-feedback">
@@ -52,11 +52,11 @@
 					    	Tema
 					    </label>
 					    <div class="input-group has-validation">
-					      <textarea class="form-control" id="exampleFormControlTextarea1 miTextArea" rows="4" name="tema"><%=orador.getTema()%></textarea>
+					      <textarea class="form-control" id="miTextArea" rows="4" name="tema"><%=orador.getTema()%></textarea>
 					    </div>
 					  </div>
 					  <div class="col-12">
-					    <button class="btn btn-primary" type="submit">
+					    <button class="btn btn-primary" type="submit" id="btnEnviar">
 					    	Editar
 					    </button>
 					  </div>
@@ -66,5 +66,6 @@
 		</main>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<jsp:include page="footer.jsp"></jsp:include>
+	<script src="./js/editValidate.js"></script>
 	</body>
 </html>
