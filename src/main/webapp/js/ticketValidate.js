@@ -172,4 +172,12 @@ window.addEventListener("load",()=>{
 		funcValidate(validate)
 	})
 	
+	form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        let arr = Object.values(validate)
+        if(!arr.includes(false)){
+            form.submit()
+        }
+    })
+	
 })
