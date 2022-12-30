@@ -110,8 +110,7 @@ window.addEventListener("load",()=>{
 		}
 		funcValidate(validate)
 	})
-	
-	console.log(validate)
+
 	
 	form.addEventListener("submit",(e)=>{
         e.preventDefault();

@@ -51,7 +51,7 @@
             <h1 class="text-center">VALOR DEL TICKET $200</h1>
         </div>
         <section class="mb-4">
-			<form action="<%=request.getContextPath()%>/CreateTicketsController" method="POST">
+			<form action="<%=request.getContextPath()%>/CreateTicketsController" method="POST" id="ticketForm">
 	            <div class="container-fluid row justify-content-center">
 	                <div class="col-12 ps-5 pe-4 d-flex flex-wrap justify-content-center">
 	                    <div class="col-8 d-flex justify-content-between">
@@ -92,7 +92,7 @@
 	                        <p class="btn btn-primary col-8 btnEnviar" style="width:48% ;" id="resumen">Resumen</p>
 	                    </div>
 	                    <div class="col-8 mt-4 d-flex justify-content-center">
-	                        <button class="btn btn-primary btnEnviar" style="width:48% ;" id="borrar" type="submit">Comprar</button>
+	                        <button class="btn btn-primary btnEnviar" style="width:48% ;" id="comprar" type="submit">Comprar</button>
 	                    </div>
 	                </div>
 	            </div>
@@ -104,6 +104,7 @@
 
 <jsp:include page="footer.jsp"></jsp:include>
     <script src="./js/script.js"></script>
+    <script src="./js/ticketValidate.js"></script>
 </body>
 
 </html>
