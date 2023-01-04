@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Navbar */
+.miNav{
+    background-color: #323b41 ;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+}
+.navLinks{
+    text-decoration: none;
+    color:#73827b ;
+}
+.tickets{
+    color:  #81c53d ;
+}
+.nav-item :hover{
+    color: white
+}
+
+/* Sections */
+
+    /* Conferencia */
+    .miCardConteiner{
+        border-radius: 0 !important;
+    }
+    .miImg {
+        object-fit: cover;
+        opacity: 0.4;
+    }
+
+    .ConfConteiner{
+        margin-top: 8%;
+        padding-top: 10%;
+        margin-right: 100px ;
+    }
+
+    .ConfTitulo{
+        font-size: 50px;
+    }
+
+    .ConfText{
+        width: 52%;
+        font-size: 23px;
+        font-weight:450;
+    }
+
+    .btnOrador{
+        background-color: transparent !important;
+        border-color: white !important;
+        font-size: 20px !important;
+        padding: 5.1px !important;
+        width: 185px;
+    }
+
+    .btnTickets{
+        background-color: #29a744 !important;
+        border-color: #29a744 !important;
+        font-size: 21px !important;
+        width: 185px;
+    }
+
+    /* Oradores */
+    .Oradores{
+        margin: 10px;
+    }
+
+    .cardConteiner{
+        padding: 0 150px;
+    }
+
+    .miH5{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    /* Lugar */
+
+    .lugar{
+        margin-top: 50px;
+    }
+
+    .miCardLugar{
+        background-color: #323b41 !important;
+    }
+
+    .h5Lugar{
+        color: white;
+        font-size: 24px;
+    }
+
+    .pLugar{
+        color: white;
+        font-size: 14px;
+    }
+
+    .btnLugar{
+        background-color: transparent !important;
+        border: 1px solid white !important;
+    }
+
+    /* Conevertite */
+    .formA{
+        text-decoration: underline dotted;
+        color: black;
+    }
+
+    .formNombre , .formApellido {
+        flex: 0 0 auto;
+        width: 48%;
+    }
+
+    textarea::placeholder{
+        font-size: 24px;
+    }
+
+    .formP{
+        color: #73827b;
+        font-size: 14px;
+    }
+
+    .btnEnviar{
+        background-color: #96C93E !important;
+        border-color: #96C93E !important;
+    }
+
+    /* footer */
+
+    footer{
+        background-color: #1E5170;
+    }
+
+    .miFotterLi a{
+        color: white;
+        text-decoration: none;
+    }
